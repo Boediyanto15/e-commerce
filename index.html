@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mang Budi Snack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/snack.jpg" alt="Logo" style="height:24px;vertical-align:middle;margin-right:8px;">
+      <span class="translate" data-id="header-title">Mang Budi Snack</span>
+    </div>
+    <div id="menu-toggle" class="menu-toggle">&#9776;</div>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="#beranda" class="nav-link translate" data-id="nav-beranda">Beranda</a></li>
+        <li><a href="#produk" class="nav-link translate" data-id="nav-produk">Produk</a></li>
+        <li><a href="#pemesanan" class="nav-link translate" data-id="nav-order">Order</a></li>
+        <li><a href="#blog" class="nav-link translate" data-id="nav-blog">Blog</a></li>
+        <li><a href="#tentang" class="nav-link translate" data-id="nav-tentang">Tentang</a></li>
+        <li><a href="#kontak" class="nav-link translate" data-id="nav-kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button id="mode-toggle">🌓</button>
+      <img src="assets/id.png" class="lang-flag active" data-lang="id" alt="ID" style="height:22px;cursor:pointer;margin-left:8px;">
+      <img src="assets/en.png" class="lang-flag" data-lang="en" alt="EN" style="height:22px;cursor:pointer;margin-left:4px;">
+      <a href="admin.html" id="login-admin-btn" class="translate" data-id="login-admin-btn" style="margin-left:12px;background:#2e7d32;color:#fff;padding:6px 16px;border-radius:8px;text-decoration:none;font-weight:600;">Login</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda">
+      <h1 class="translate" data-id="title-beranda" style="text-align:center;">
+        Selamat datang di Mang Budi Snack!
+      </h1>
+    </section>
+
+    <section id="produk">
+      <h2 class="translate" data-id="title-produk">Produk Kami</h2>
+      <div class="produk-container" id="produk-list">
+        <!-- Produk akan dimuat oleh JavaScript -->
+      </div>
+    </section>
+
+    <section id="pemesanan">
+      <h2 class="translate" data-id="title-pemesanan">Pesanan Anda</h2>
+      <ul id="cart-list"></ul>
+      <div id="cart-summary"></div>
+    </section>
+
+    <section id="tentang">
+      <h2 class="translate" data-id="title-tentang">Tentang Kami</h2>
+      <p class="translate" data-id="desc-tentang">
+      Mang Budi Snack adalah toko camilan rumahan yang menghadirkan cita rasa khas dan sehat sejak 2010. Kami menawarkan 3 produk favorit : Coklat manis, Sistik Bawang renyah, dan Keripik Bayam sehat. Nikmati camilan berkualitas, cocok untuk teman santai dan keluarga !
+      </p>
+    </section>
+
+    <section id="kontak">
+      <h2 class="translate" data-id="title-kontak">Hubungi Kami</h2>
+      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
+        <div>
+          <p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mangbudisnack@gmail.com" target="_blank" rel="noopener">
+              <img src="assets/email.png" alt="Email" style="height:22px;vertical-align:middle;margin-right:8px;">
+              <span style="vertical-align:middle;">mangbudisnack@gmail.com</span>
+            </a>
+          </p>
+          <p>
+            <a href="https://instagram.com/mangbudi_snack" target="_blank" rel="noopener">
+              <img src="assets/ig.png" alt="Instagram" style="height:22px;vertical-align:middle;margin-right:8px;">
+              <span style="vertical-align:middle;">@mangbudi_snack</span>
+            </a>
+          </p>
+          <p>
+            <a href="https://wa.me/62881023481159" target="_blank" rel="noopener">
+              <img src="assets/wa.png" alt="WhatsApp" style="height:22px;vertical-align:middle;margin-right:8px;">
+              <span style="vertical-align:middle;">0881-0234-81159</span>
+            </a>
+          </p>
+          <p>
+            <a href="https://shopee.co.id/mangbudisnack" target="_blank" rel="noopener">
+              <img src="assets/shopee.png" alt="Shopee" style="height:22px;vertical-align:middle;margin-right:8px;">
+              <span style="vertical-align:middle;">mangbudisnack</span>
+            </a>
+          </p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.0071713255269!2d107.5749500571627!3d-7.002526993392159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9004afbdc9b%3A0xab988f6441baef60!2sRumah%20Silvi!5e0!3m2!1sid!2sid!4v1755613916005!5m2!1sid!2sid"
+            width="250"
+            height="150"
+            style="border:0;border-radius:12px;box-shadow:0 2px 8px rgba(34,139,34,0.10);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div style="font-size:13px;margin-top:4px;color:#388e3c;">
+            Jl. In aja dulu No. 123, Bandung, Jawa Barat
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+      <h2 class="translate" data-id="title-blog">Blog</h2>
+      <article class="blog-article">
+        <h3 class="translate" data-id="blog-judul">Perjalanan Mang Budi Snack : Dari Dapur Kecil ke Toko Online</h3>
+        <p class="translate" data-id="blog-isi1">
+          Halo, saya Budi, pendiri Mang Budi Snack. Usaha camilan ini berawal dari dapur kecil di rumah pada tahun 2010. Berbekal resep keluarga dan semangat untuk menghadirkan camilan sehat, saya mulai memproduksi Coklat, Sistik Bawang, dan Keripik Bayam.
+        </p>
+        <p class="translate" data-id="blog-isi2">
+          Awalnya, produk hanya dijual ke tetangga dan teman dekat. Namun, berkat dukungan pelanggan setia dan perkembangan teknologi, kini Mang Budi Snack hadir secara online agar lebih banyak orang bisa menikmati camilan khas kami.
+        </p>
+        <p class="translate" data-id="blog-isi3">
+          Saya percaya, camilan bukan hanya soal rasa, tapi juga kebersamaan dan cerita di baliknya. Terima kasih sudah menjadi bagian dari perjalanan Mang Budi Snack!
+        </p>
+        <p class="translate" data-id="blog-salam" style="font-style:italic;color:#388e3c;">
+          Salam hangat,<br>Budi (Owner Mang Budi Snack)
+        </p>
+      </article>
+    </section>
+
+    <!-- Dukungan Pembayaran -->
+    <section id="pembayaran" style="text-align:center; margin-top:-16px;">
+      <h2 class="translate" data-id="title-pembayaran" style="color:#2e7d32;">Dukungan Pembayaran</h2>
+      <div style="display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap;margin-top:18px;">
+        <img src="assets/qris.png" alt="QRIS" style="height:48px;">
+        <img src="assets/bca.png" alt="BCA" style="height:48px;">
+        <img src="assets/dana.png" alt="DANA" style="height:48px;">
+        <img src="assets/ovo.png" alt="OVO" style="height:48px;">
+        <img src="assets/gopay.png" alt="GoPay" style="height:48px;">
+      </div>
+      <div class="translate" data-id="pembayaran-note" style="font-size:13px;color:#388e3c;margin-top:10px;">
+        Silakan hubungi admin untuk detail pembayaran.
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#444;color:white;text-align:center;padding:10px;">
+    <span>
+      <span class="translate" data-id="footer-visitor">Jumlah Pengunjung :</span>
+      <span id="visitor-count"></span>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

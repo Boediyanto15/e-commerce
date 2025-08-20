@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Admin - Mang Budi Snack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/snack.jpg" alt="Logo" style="height:24px;vertical-align:middle;margin-right:8px;">
+      Dashboard Admin
+    </div>
+    <button id="logout-btn" style="margin-left:auto;background:#ff5252;color:#fff;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;">Logout</button>
+  </header>
+  <main>
+    <section>
+      <h2>Kelola Produk</h2>
+      <div style="overflow-x:auto;">
+        <table id="product-table" style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr style="background:#e8f5e9;">
+              <th>Nama Produk</th>
+              <th>Deskripsi</th>
+              <th>Stok</th>
+              <th>Harga</th>
+              <th>URL Gambar</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="product-list"></tbody>
+        </table>
+      </div>
+      <button id="add-product-btn" style="margin-top:18px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;">Tambah Produk</button>
+      <div id="add-product-form" style="display:none;margin-top:18px;">
+        <input type="text" id="new-name" placeholder="Nama Produk" required>
+        <input type="text" id="new-desc" placeholder="Deskripsi" required>
+        <input type="number" id="new-stock" placeholder="Stok" required>
+        <input type="number" id="new-price" placeholder="Harga" required>
+        <input type="text" id="new-img" placeholder="URL Gambar" required>
+        <button id="save-product-btn">Simpan</button>
+      </div>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -44,7 +44,11 @@ const lang = {
     "nav-order": "Order",
     "nav-blog": "Blog",
     "nav-tentang": "Tentang",
-    "nav-kontak": "Kontak"
+    "nav-kontak": "Kontak",
+    "jumlah-pesanan": "Jumlah Pesanan :",
+    "total-harga": "Total Harga :",
+    "checkout-wa": "Checkout via WhatsApp",
+    "harga": "Harga :"
   },
   en: {
     "title-beranda": "Welcome to Mang Budi Snack!",
@@ -70,7 +74,11 @@ const lang = {
     "nav-order": "Order",
     "nav-blog": "Blog",
     "nav-tentang": "About",
-    "nav-kontak": "Contact"
+    "nav-kontak": "Contact",
+    "jumlah-pesanan": "Total Orders :",
+    "total-harga": "Total Price :",
+    "checkout-wa": "Checkout via WhatsApp",
+    "harga": "Price :"
   }
 };
 
@@ -86,7 +94,7 @@ function renderProducts() {
         <img src="${item.img}" alt="${item.name}">
         <h3>${item.name}</h3>
         <p>${item.desc}</p>
-        <p><strong>${lang[currentLang]["total-harga"] || "Harga"} :</strong> Rp${item.price.toLocaleString()}</p>
+        <p><strong>${lang[currentLang]["harga"] || "Harga :"} </strong> Rp${item.price.toLocaleString()}</p>
         <p><strong>${lang[currentLang]["stok-tersedia"] || "Stok tersedia"} :</strong> ${item.stok ?? 0}</p>
         <button class="btn-cart" onclick="addToCart(${i})">${lang[currentLang]["btn-cart"]}</button>
       </div>

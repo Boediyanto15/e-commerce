@@ -197,6 +197,6 @@ function updateVisitorCount() {
   count = parseInt(count) + 1;
   localStorage.setItem("visitorCount", count);
   const el = document.getElementById("visitor-count");
-  if (el) el.textContent = `Jumlah Pengunjung : ${count}`;
+  if (el) el.textContent = count; // Hanya angka saja
 }
 updateVisitorCount();
